@@ -1,0 +1,121 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+section
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    width: 100%;
+}
+
+header
+{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    padding: 30px;
+    display: flex;
+    justify-content: space-between;
+}
+
+a
+{
+    text-decoration: none;
+    position: relative;
+    font-size: 40px;
+    color: red;
+    top: 2px;
+}
+
+header i
+{
+  font-size: 2rem;
+}
+
+.nav
+{
+    position: absolute;
+    bottom: 30px;
+    display: flex;
+    gap: 30px;
+}
+
+.nav li{
+    list-style: none;
+    position: relative;
+}
+
+.nav li a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80px;
+    height: 80px;
+    background: #fff;
+    color: #333;
+    border-radius: 50%;
+    box-shadow: 0 20px 20px rgba(0,0,0,0.5);
+}
+
+.nav li a:hover
+{
+    background: red;
+    color: #fff;
+}
+
+.imgscroll
+{
+    position: absolute;
+    left: 0;
+    padding: 60px 0;
+    width: 100%;
+    display: flex;
+}
+
+.imgscroll div{
+    display: flex;
+    animation: animate 30s linear infinite;
+    animation-delay: -20px;
+}
+
+@keyframes animate 
+{
+    0%
+    {
+        transform: translate(100%);
+    }
+    100%
+    {
+        transform: translate(-100%);
+    }
+}
+
+.imgscroll div img{
+    margin: 0 25px;
+    max-width: 300px;
+    border: 10px solid transparent;
+    transition: 0.25s;
+}
+
+.imgscroll div img:hover
+{
+    border:10px solid #fff;
+    box-shadow: 0 20px 20px rgba(0,0,0,0.2);
+}
+
+.imgscroll:hover div img{
+    opacity: 0.5;
+    filter: blur(5px);
+}
+
+.imgscroll div img:hover
+{
+    filter: blur(0px);
+    opacity: 1;
+}
