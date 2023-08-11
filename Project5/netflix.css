@@ -1,0 +1,181 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+.container
+{
+    background-image: url(images/n-hero.jpg);
+    height: 620px;
+}
+.nav
+{
+    height: 80px;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+.logo
+{
+    height: 150px;
+    width: 200px;
+    margin-left: 50px;
+    margin-top: 30px;
+}
+
+.selbtn
+{
+    height: 40px;
+    width: 130px;
+    background-color: black;
+    color: #ffffff;
+    padding: 6px 28px;
+    font-size: 15px;
+    margin: 10px;
+    border-radius: 6px;
+    margin-top: 30px;
+}
+
+.btn 
+{
+    background-color: red;
+    color: #ffffff;
+    font-size: 15px;
+    border: 2px solid transparent;
+    width: 77px;
+    height: 40px;
+    margin-right: 70px;
+    border-radius: 6px;
+}
+
+.content
+{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 500px;
+  color: #ffffff;
+  flex-direction: column;
+}
+
+h1{
+    font-size: 60px;
+    font-weight: 100;
+    background-color: rgba(0, 0, 0, 0.2);;
+}
+
+p{
+    font-size: 25px;
+    margin: 16px 0px 0px;
+    background-color:rgba(0, 0, 0, 0.2); ;
+}
+
+.cont{
+   margin-top: 30px;
+}
+
+.em
+{
+    height: 56px;
+    width: 370px;
+    padding: 10px 10px 8px;
+    color: gray;
+    font-size: 18px;
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 5px;
+}
+
+.bt1
+{
+    background-color: red;
+    height: 56px;
+    width: 150px;
+    font-size: 18px;
+    border-radius: 5px;
+    border: 2px solid transparent;
+    color: #ffffff;
+}
+
+hr
+{
+    border:4px solid rgb(54, 52, 52);
+}
+
+/**********************************sec-part******************************/
+
+.sec-part , .th-sec , .for-sec
+{
+    height: 500px;
+    background-color: black;
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.cont-sec
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+.th-sec h2 , .th-sec p{
+    position: relative;
+    left: 15%;
+}
+
+h2
+{
+    font-size: 50px;
+}
+ .cont-sec p{
+    position: relative;
+    left: 9%;
+    font-size: 20px;
+ }
+ /**********************************************************************/
+ .last-sec
+ {
+    background-color: black;
+    color: #ffffff;
+    height: 500px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+ }
+.last-sec h2
+{
+    position: relative;
+    top:5%;
+}
+
+.di
+{
+    position: relative;
+    top:10%;
+    background-color: rgb(54, 52, 52);
+}
+
+#div1 ,#div2 , #div3 ,#div4 , #div5
+{
+    width: 70%;
+    height: 50px;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+h4{
+    margin-left: 20px;
+    margin-top: 15px;  
+}
+
+.di:hover
+{
+    background-color: gray;
+}
