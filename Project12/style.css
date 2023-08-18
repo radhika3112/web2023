@@ -1,0 +1,185 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.box1 
+{
+    height: 400px;
+    width: 400px;
+    background: skyblue;
+}
+
+.box2
+{
+    height: 500px;
+    width: 500px;
+    background: rgb(64, 157, 194);
+    position: absolute;
+    left: 150px;
+    bottom: 200px;
+}
+.box3
+{
+    height:450px;
+    width: 450px;
+    background: rgb(33, 92, 112);
+    position: absolute;
+    right: 90px;
+    top:300px
+}
+
+.box4
+{
+    height: 200px;
+    width: 200px;
+    background: rgb(12, 104, 134);
+    position: absolute;
+    left: 20px;
+    top:400px;
+}
+.box5
+{
+    position: absolute;
+    height: 300px;
+    width: 300px;
+    background: rgb(47, 175, 218);
+    right: 30px;
+    top:20px;
+}
+
+.box1 , .box2 , .box3 , .box4 ,.box5{
+    filter: blur(150px);
+}
+.circle1 , .circle3 , .circle7
+{
+    height: 100px;
+    width:100px;
+    border-radius: 50%;
+}
+@keyframes bubble {
+    0%
+    {
+        transform: translateY(-50%);
+    }
+    30%
+    {
+        transform: translateY(50%);
+    }
+    60%
+    {
+        transform: translateY(100%);
+    }
+    100%
+    {
+        transform: translate(50%);
+    }
+}
+
+.circle1
+{
+    position: absolute;
+    left: 90px;
+    top:70px;
+}
+
+.circle3
+{
+    position: absolute;
+    left: 200px;
+}
+
+.color
+{
+    background:transparent;
+    border: white 0.1px solid;
+    filter: blur(2px);
+    box-shadow:0 0 10px rgba(78, 159, 170, 0.5);
+    animation: bubble 4s linear infinite;
+}
+.circle12 , .circle14 , .circle9
+{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+.circle12
+{
+    position: absolute;
+    left: 10px;
+}
+.circle14
+{
+    left: 200px;
+    top: 40px;
+    position: absolute;
+}
+
+.circle5, .circle4 , .circle10
+{
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+}
+
+.circle5
+{
+    position: absolute;
+    left: 500px;
+    top:20px
+}
+
+.circle8 , .circle6
+{
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+}
+.circle8
+{
+    position: absolute;
+    right: 10px;
+}
+.circle6
+{
+    position: absolute;
+    left: 10px;
+    top:5px;
+}
+.circle11 , .circle13, .circle2{
+     height: 200px;
+     width: 200px;
+     border-radius: 50%;
+     position: absolute;
+}
+.circle11
+{
+    position: absolute;
+    right: 70px;
+    top:10px;
+}
+
+.circle13
+{
+    position: absolute;
+    left: 300px;
+    top:20px
+}
+
+.circle2{
+   position: absolute;
+   right: 400px;
+   bottom:5px;
+}
+
+
+
