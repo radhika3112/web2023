@@ -1,0 +1,44 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+body
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background:gray;
+}
+
+.clock
+{
+    font-size: 50px;
+    width: 700px;
+    height: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid transparent;
+    border-radius: 20px;
+    box-shadow: 0 20px 20px rgba(12, 12, 12, 0.5);  
+    gap: 20px; 
+}
+
+.hours , .min , .sec
+{
+    border: 2px solid transparent;
+    border-radius: 10px;
+    box-shadow: 0 20px 20px rgba(26, 24, 24, 0.5);
+    height: 200px;
+    width: 200px;
+    display: flex;
+    justify-content: center;
+    background-color: black;
+    color: white;
+    align-items: center;
+    font-size: 150px;
+}
