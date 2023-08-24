@@ -1,0 +1,113 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: black;
+    animation: rotate 2s linear infinite;
+}
+
+@keyframes rotate {
+    0%
+    {
+        filter: hue-rotate(360deg);
+    }
+}
+
+.circle1
+{
+    width: 300px;
+    height: 300px;
+    border: 15px solid rgba(0, 0, 0, 0.13);
+    border-radius: 50%;
+    border-top: 15px solid rgba(247, 64, 64, 0.979);
+    box-shadow: 0 0 100px red;
+    animation: ani 2s linear infinite;    
+}
+
+@keyframes ani {
+    0%
+    {
+        transform: rotate(0);
+    }
+    100%
+    {
+        transform: rotate(360deg);
+    }   
+}
+
+.circle2
+{
+    width: 260px;
+    height: 260px;
+    border: 15px solid white;
+    border-radius: 50%;
+    position: absolute;
+    border-top: 20px solid green;
+    box-shadow: 0 0 20px green;
+    animation: ani2 2s linear infinite;
+}
+
+@keyframes ani2 {
+    0%
+    {
+        transform: rotate(360deg);
+    }
+    100%
+    {
+        transform: rotate(0);
+    }
+}
+
+.circle3
+{
+    width: 230px;
+    height: 230px;
+    border: 15px solid white;
+    border-radius: 50%;
+    position: absolute;
+    border-top: 20px solid blue;
+    box-shadow: 0 0 20px blue;
+    animation: ani3 2s linear infinite;
+}
+
+@keyframes ani3 {
+    0%
+    {
+        transform: rotate(0);
+    }
+    100%
+    {
+        transform: rotate(360deg);
+    }
+}
+.circle4
+{
+    width: 200px;
+    height: 200px;
+    border: 15px solid white;
+    border-radius: 50%;
+    position: absolute;
+    border-top: 20px solid orange;
+    box-shadow: 0 0 20px orange;
+    animation: ani4 2s linear infinite;  
+}
+
+@keyframes ani4{
+    0%
+    {
+        transform: rotate(360deg);
+    }
+    100%
+    {
+        transform: rotate(0);
+    }
+}
