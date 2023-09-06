@@ -1,0 +1,43 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background:linear-gradient(45deg, black , lightblue);
+}
+
+.container
+{
+     border: 2px solid lightblue;
+     border-radius: 20px;
+     box-shadow: 0 10px 20px lightblue;
+     width: 400px;
+     height: 400px;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     flex-direction: column;
+     background: linear-gradient(45deg , lightblue, black);
+     
+}
+h1{
+    font-size: 30px;
+    color: white;
+}
+.play
+{
+    display: flex;
+    margin: 30px;
+    gap: 30px;
+    font-size: 20px;
+    
+}
