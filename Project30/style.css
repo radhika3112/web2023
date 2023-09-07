@@ -1,0 +1,62 @@
+:root{
+    --blue : #00468b;
+    --red : #f73838;
+    --orange : #ffa81c;
+    --yellow : #ffff2b;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    background-color: #0f1422;
+}
+
+.c{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 3px solid #f73838;
+    position: absolute;
+    opacity: 0;
+    animation: hide 4s linear infinite;
+}
+
+#c2{
+    animation-delay: 1000ms;
+}
+
+#c3{
+    animation-delay: 2000ms;
+}
+
+#c4{
+    animation-delay: 3000ms;
+}
+
+@keyframes hide {
+    0%{
+        border-color: var(--yellow);
+    }
+    25%{
+        border-color: var(--orange);
+    }
+    50%{
+        border-color: var(--red);
+    }
+    75%{
+        border-color: var(--blue);
+    }
+
+
+    /* ----------------------------- */
+
+    10%{
+        opacity: 1;
+    }
+    95%{
+        transform: scale(3);
+        opacity: 0;
+    }
+}
