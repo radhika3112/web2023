@@ -1,0 +1,65 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(45deg, pink, aqua);
+}
+
+.box
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 400px;
+    height: 400px;
+    background: linear-gradient(45deg, aqua, pink);
+    box-shadow: 0 20px 20px black;
+}
+
+.circle
+{
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    background-color: aqua;
+    border-top: 90px pink solid;
+    box-shadow: 0 20px 20px black;
+    animation: rot linear 2s infinite;
+}
+@keyframes rot {
+    0%
+    {
+        transform: rotate(-45deg);
+    }
+    20%
+    {
+        transform: translateY(50px);
+    }
+    40%
+    {
+        transform: translateY(-50px);
+    }
+    60%
+    {
+        transform: translateX(50px);
+    }
+    80%
+    {
+        transform: translateX(-50px);
+    }
+    100%
+    {
+        transform: rotate(45deg);
+        
+    }
+    
+}
