@@ -1,0 +1,47 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: black;
+}
+
+.lod
+{
+    color: white;
+    font-size: 100px;
+    position: relative;
+    
+    text-transform: uppercase;
+    
+}
+
+@keyframes trans {
+    0%
+    {
+    width: 0;
+    }
+    50%
+    {
+        width: 100%;
+    }
+}
+
+.lod::before
+{
+    content: "Radhika...";
+    position: absolute;
+    color: pink;
+    border-right: 2px solid pink;
+    width: 10%;
+    overflow: hidden;
+    animation: trans 2s linear infinite;
+}
