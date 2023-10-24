@@ -1,0 +1,92 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    background-color: black;
+    
+}
+.cradle
+{
+    width: 400px;
+    height: 30px;
+    background-color: purple;
+    position: relative;
+    box-shadow: 0 -10px 30px 2px purple;
+    top: 50px;
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.cradle .x{
+    height: 250px;
+    width: 5px;
+    background-color: purple;
+    position: relative;
+}
+
+.x::before
+{
+    position: absolute;
+    content: "";
+    bottom: 0;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: purple;
+    left: -20px;
+    box-shadow: -10px 0 30px 5px purple,10px 0 30px 5px purple;
+}
+.cradle div:first-child{
+    animation: swing 2s linear infinite ;
+    transform-origin: top left;
+}
+@keyframes swing {
+    0%
+    {
+        rotate: 0deg;
+    }
+    25%
+    {
+        rotate: 30deg;
+    }
+    50%
+    {
+        rotate: 0deg;
+    }
+    100%
+    {
+        rotate: 30deg;
+    }
+}
+
+.cradle div:last-child{
+    animation: swi 2s linear 2s infinite;
+    transform-origin: top left;
+}
+@keyframes swi{
+    0%
+    {
+        rotate: 0deg;
+    }
+    25%
+    {
+        rotate: -30deg;
+    }
+    50%
+    {
+        rotate: 0deg;
+    }
+    100%
+    {
+        rotate: -30deg;
+    }
+}
