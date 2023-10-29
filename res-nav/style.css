@@ -1,0 +1,94 @@
+*
+{
+  margin:0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html
+{
+    font-size: 62.5%;
+}
+
+.navbar
+{    position: fixed;
+    top: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 2rem;
+    align-items: center;
+    background-color: lightcoral;
+    font-size: 2rem;
+    color: white;
+    
+}
+.logo
+{
+    margin-left: 4rem;
+}
+ul{
+    display: flex;
+    gap: 2rem;
+    font-size: 2rem;
+}
+ul li{
+    list-style: none;
+}
+
+ul li a{
+    text-decoration: none;
+    margin-right: 3rem;
+    color: white;
+    text-transform: uppercase;
+}
+ul li a:hover
+{
+    background-color: white;
+    color: pink;
+    padding: 1rem 2rem;
+    transition: .5s ease;
+}
+
+section
+{
+    min-height: 100vh;
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+i{
+    position: absolute;
+    display: none;
+    right: 2rem;
+}
+@media  (max-width:600px) {
+    .fa-bars
+    {
+        display: flex;
+    }
+    ul 
+    {
+        display: none;
+        width: 100%;
+    }
+    .navbar
+    {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .navbar ul
+    {
+        flex-direction: column;
+    }
+    .navbar ul li 
+    {
+        text-align: center;
+    }
+
+    ul.add
+    {
+        display: flex;
+    }
+}
