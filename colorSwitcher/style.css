@@ -1,0 +1,19 @@
+.btn1,.btn2,.btn3
+{
+  width: 200px;
+  height: 200px;
+  margin: 5px;
+  border: 2px solid black;
+}
+.btn1
+{
+    background-color: palevioletred;
+}
+
+.btn2{
+    background-color: blueviolet;
+}
+
+.btn3{
+    background-color: yellowgreen;
+}
